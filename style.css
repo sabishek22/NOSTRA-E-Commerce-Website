@@ -1193,25 +1193,9 @@ body {
     }
 
     /* ----------- NOSTRA APP SECTION ----------- */
-    .nostra-container {
-        height: auto;
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .nostra-container img {
-        width: 230px;
-        height: auto;
-    }
-
-    .nostra-container h2 {
-        font-size: 18px;
-    }
-
-    .nostra-container h4 {
-        font-size: 13px;
-    }
+ .sec-nostraapp{
+  display: none;
+ }
 
     /* ----------- ABOUT SECTION ----------- */
     .sec-about h1 {
