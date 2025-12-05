@@ -15,42 +15,138 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="nav-cont">
-        <div class="nav-title">
+      <div class="nav-one">
+        <div class="one-title">
           <h1>NOSTRA</h1>
-          <p>ELEVATE YOUR FASHION</p>
+          <p>Elevate Your Fashion</p>
         </div>
-        <div class="search">
-          <input type="text" placeholder="Find your Favorite.." />
-          <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="one-search">
+          <input type="text" placeholder="What are you looking for today?" />
+          <i class="fa-solid fa-microphone"></i>
+          <i class="fa-regular fa-camera"></i>
         </div>
-        <div class="toggle">
-          <i class="fa-solid fa-list fa-2x" id="menu-icon"></i>
-          <div class="menu-toggle hidden">
-            <p><a href="#">About Us</a></p>
-            <p><a href="./collection.html">Collection</a></p>
-            <p><a href="./contact.html">Contact Us</a></p>
-            <p><a href="./index.html">Logout</a></p>
-            <h3>@Nostra</h3>
+        <div class="one-tags">
+          <p><a href="#">Gift Cards</a></p>
+          <p><a href="./collection.html">Collections</a></p>
+          <p><a href="./contact.html">Contact Us</a></p>
+        </div>
+        <div class="one-fonts">
+          <div class="font-profile">
+            <i class="fa-solid fa-user"></i>
+            <div class="profile-toggle hidden">
+              <p>
+                Hello User
+                <span style="display: block"
+                  >To access your Nostra Account</span
+                >
+              </p>
+              <p>Sign In</p>
+              <p>My Orders</p>
+              <p style="border: none">
+                <a
+                  href="./index.html"
+                  style="text-decoration: none; color: rgb(131, 111, 0)"
+                  >LogOut</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="font-menu">
+            <i class="fa-solid fa-list"></i>
+            <div class="menu-toggle hidden">
+              <p
+                class="collection-link"
+                onclick="location.href='./collection.html'"
+              >
+                Collections
+              </p>
+              <p>About Us</p>
+              <p class="contact-link" onclick="location.href='./contact.html'">
+                Contact Us
+              </p>
+
+              <p>Become a Supplier</p>
+            </div>
+          </div>
+          <div class="font-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-toggle hidden">
+              <p>! Your Cart is empty !</p>
+            </div>
           </div>
         </div>
-        <div class="menu">
-          <p><a href="#">About Us</a></p>
-          <p><a href="./collection.html">Collection</a></p>
-          <p><a href="./contact.html">Contact Us</a></p>
-          <p><a href="./index.html">Logout</a></p>
+      </div>
+      <div class="nav-two">
+        <div class="two-men">
+          <h6>MEN</h6>
+          <div class="men-opt hidden">
+            <p>Summer T-Shirts</p>
+            <p>Formal Shirts</p>
+            <p>Jeans</p>
+            <p>Shorts</p>
+            <p>Gym Suits</p>
+            <p>Sweat Shirts</p>
+            <p>Cargos & Trousers</p>
+          </div>
+        </div>
+        <div class="two-kid">
+          <h6>KIDS</h6>
+          <div class="kid-opt hidden">
+            <p>Babies</p>
+            <p>Clothing Set</p>
+            <p>Baby Bedding</p>
+            <p>Best Sellers</p>
+            <p>Frocks</p>
+            <p>Toys</p>
+          </div>
+        </div>
+        <div class="two-popular">
+          <h6>POPULAR</h6>
+          <div class="pop-opt hidden">
+            <p>Men Fashion</p>
+            <p>Top Brands</p>
+            <p>Cargos</p>
+            <p>Gym shorts</p>
+            <p>Office Wears</p>
+            <p>Kids</p>
+          </div>
+        </div>
+        <div class="two-accesories">
+          <h6>ACCESORIES</h6>
+          <div class="acc-opt hidden">
+            <p>Makeup Kits</p>
+            <p>Watches</p>
+            <p>Mens Fashion</p>
+            <p>Belts</p>
+            <p>Wallets</p>
+            <p>Sun Glasses</p>
+          </div>
+        </div>
+        <div class="two-foots">
+          <h6>BAGS&FOOTWEAR</h6>
+          <div class="foot-opt hidden">
+            <p>Womens Sandals</p>
+            <p>Kids Footwear</p>
+            <p>Mens Shoes</p>
+            <p>Flipflops</p>
+            <p>Boots</p>
+          </div>
+        </div>
+        <div class="two-women">
+          <h6>WOMEN</h6>
+          <div class="women-opt hidden">
+            <p>Tops</p>
+            <p>T-Shirts</p>
+            <p>JumpSuits</p>
+            <p>Gown</p>
+            <p>New Trends</p>
+          </div>
         </div>
       </div>
     </nav>
     <section class="sec-image">
       <div class="image-opt">
-        <img src="./images/sec image-2.jpg" alt="" />
-        <div class="angle-left">
-          <i class="fa-solid fa-angle-left fa-3x"></i>
-        </div>
-        <div class="angle-right">
-          <i class="fa-solid fa-angle-right fa-3x"></i>
-        </div>
+        <img src="./images/sec image-2.jpg" alt="model" />
       </div>
     </section>
     <section class="sec-brand">
@@ -165,7 +261,7 @@
       <div class="offer-container">
         <img src="./images/section image.jpg" alt="model" />
         <div class="offer-alert">
-          <h1>💥 Flash Sale is Live!💥</h1>
+          <h1>Flash Sale is Live!</h1>
           <h2>Grab 35% OFF Before It’s Gone!</h2>
           <button>ShopNow</button>
         </div>
