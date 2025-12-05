@@ -1069,4 +1069,178 @@ body {
   }
 }
 
+/* ===========================================
+   PERFECT SMALL MOBILE VIEW — MAX 360PX
+   =========================================== */
+@media screen and (max-width: 360px) {
+
+    /* ----------- FIX OVERFLOW / SLIDING ----------- */
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    section, div {
+        overflow-x: hidden;
+    }
+
+    /* ----------- NAVBAR ----------- */
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-cont img {
+        width: 110px;
+    }
+
+    #menu-icon {
+        font-size: 22px;
+    }
+
+    /* ----------- BANNER / SLIDER ----------- */
+    .banner-container {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .slider-container img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .slider-arrow {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .banner-content h3 {
+        font-size: 20px;
+    }
+
+    .banner-content p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .banner-content button {
+        font-size: 12px;
+        padding: 6px 18px;
+    }
+
+    /* ----------- ARRIVAL SECTION ----------- */
+    .arrival-container {
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .arrival-container .arrival {
+        padding-bottom: 20px;
+    }
+
+    .arrival-container img {
+        height: 110px;
+    }
+
+    /* ----------- WANTED SECTION ----------- */
+    .wanted-collection {
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .wanted-list img {
+        height: 110px;
+    }
+
+    .react-icon {
+        font-size: 16px;
+    }
+
+    /* ----------- OFFER SECTION ----------- */
+    .offer-container img {
+        height: 200px;
+    }
+
+    .offer-alert h1 {
+        font-size: 20px;
+    }
+
+    .offer-alert h2 {
+        font-size: 14px;
+    }
+
+    .offer-alert button {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+
+    /* ----------- NOSTRA APP SECTION ----------- */
+    .nostra-container {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nostra-container img {
+        width: 230px;
+        height: auto;
+    }
+
+    .nostra-container h2 {
+        font-size: 18px;
+    }
+
+    .nostra-container h4 {
+        font-size: 13px;
+    }
+
+    /* ----------- ABOUT SECTION ----------- */
+    .sec-about h1 {
+        font-size: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .cont-box h4 {
+        font-size: 14px;
+    }
+
+    .cont-box p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* ----------- FOOTER ----------- */
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
 
