@@ -445,6 +445,7 @@ body {
 .sec-image {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .image-opt {
@@ -968,6 +969,23 @@ body {
   width: 100px;
 }
 
+/* .float{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.float img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+} */
+
 @media screen and (min-width: 1200px) {
   .font-menu {
     display: none;
@@ -981,9 +999,16 @@ body {
     width: 37%;
     height: 270px;
   }
+
+  .nav-three {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 980px) {
+  .nav-three {
+    display: none;
+  }
   .one-tags {
     display: none;
   }
@@ -1129,6 +1154,102 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+  .nav-three {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .three-men,
+  .three-kid,
+  .three-women,
+  .three-access,
+  .three-foots {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .three-men:hover,
+  .three-kid:hover,
+  .three-women:hover,
+  .three-access:hover,
+  .three-foots:hover {
+    transform: scale(1.03);
+  }
+
+  .three-men:hover .hidden,
+  .three-kid:hover .hidden,
+  .three-women:hover .hidden,
+  .three-access:hover .hidden,
+  .three-foots:hover .hidden {
+    display: block !important;
+  }
+
+  .men-drop,
+  .kid-drop,
+  .women-drop {
+    width: 200px;
+    box-shadow: 0px 2px 4px lightgray;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 99999;
+  }
+
+  .access-drop,
+  .foot-drop {
+    width: 200px;
+    box-shadow: 0px 2px 4px lightgray;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    z-index: 99999;
+  }
+
+  .three-men h6,
+  .three-kid h6,
+  .three-women h6,
+  .three-access h6,
+  .three-foots h6 {
+    font-size: 12px;
+    color: rgb(113, 0, 0);
+    font-weight: 600;
+  }
+
+  .men-drop p,
+  .kid-drop p,
+  .women-drop p,
+  .access-drop p,
+  .foot-drop p {
+    padding: 10px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    margin: 0px 10px;
+    background-color: white;
+    transition: 0.4s ease;
+  }
+
+  .men-drop p:hover,
+  .kid-drop p:hover,
+  .women-drop p:hover,
+  .access-drop p:hover,
+  .foot-drop p:hover {
+    background-color: lightgray;
+    color: rgb(169, 0, 0);
+  }
+
+  .three-men img,
+  .three-kid img,
+  .three-women img,
+  .three-access img,
+  .three-foots img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(136, 1, 1);
+  }
   .one-title p {
     display: none;
   }
@@ -1151,6 +1272,10 @@ body {
 
   .nav-two {
     display: none;
+  }
+
+  .sec-image{
+    margin-top: 20px;
   }
 
   .image-opt {
