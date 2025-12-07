@@ -1,43 +1,38 @@
-// HEADER POPUP //
+const overlay = document.getElementById("overlay");
 
-  document.getElementById("closePop").onclick = function () {
-    document.getElementById("headPop").style.display = "none";
+const dropdowns = {
+  profile: document.querySelector(".profile-toggle"),
+  menu: document.querySelector(".menu-toggle"),
+  cart: document.querySelector(".cart-toggle")
+};
 
-    document.querySelector(".navbar").style.top = "0";
-  };
+const icons = {
+  profile: document.querySelector(".font-profile i"),
+  menu: document.querySelector(".font-menu i"),
+  cart: document.querySelector(".font-cart i")
+};
 
+function openDropdown(dropdown) {
+  Object.values(dropdowns).forEach(d => d.classList.remove("show"));
+  overlay.classList.add("active");
+  dropdown.classList.add("show");
+}
 
+function closeDropdowns() {
+  Object.values(dropdowns).forEach(d => d.classList.remove("show"));
+  overlay.classList.remove("active");
+}
 
+icons.profile.addEventListener("click", () => openDropdown(dropdowns.profile));
+icons.menu.addEventListener("click", () => openDropdown(dropdowns.menu));
+icons.cart.addEventListener("click", () => openDropdown(dropdowns.cart));
 
-//PROFILE TOGGLE//
+document.querySelectorAll(".close-btn").forEach(btn => {
+  btn.addEventListener("click", closeDropdowns);
+});
 
-let profile = document.querySelector(".font-profile")
+overlay.addEventListener("click", closeDropdowns);
 
-let prof_toggle = document.querySelector(".profile-toggle")
-
-profile.addEventListener("click",function(){
-    prof_toggle.classList.toggle("hidden")
-})
-
-//MENU TOGGLE//
-
-let menu = document.querySelector(".font-menu")
-
-let menu_toggle = document.querySelector(".menu-toggle")
-
-menu.addEventListener("click",function(){
-    menu_toggle.classList.toggle("hidden")
-})
-
-//CART TOGGLE//
-
-let cart = document.querySelector(".font-cart")
-
-let cart_toggle = document.querySelector(".cart-toggle")
-
-cart.addEventListener("click",function(){
-    cart_toggle.classList.toggle("hidden")
-})
 
 
 //MEN SECTION TOGGLE//

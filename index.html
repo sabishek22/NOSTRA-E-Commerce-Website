@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="./home.html">HOme</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background: url("./images/yearone-0YY8Qytn6uw-unsplash.jpg") no-repeat
+          center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-box {
+        background: transparent;
+        padding: 40px;
+        width: 350px;
+        text-align: center;
+        box-shadow: 0px 0px 2px rgb(39, 39, 39);
+      }
+
+      .login-box h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+      }
+
+      .login-box input {
+        width: 100%;
+        padding: 10px 15px;
+        margin: 10px 0;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+      }
+
+      .login-box input::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .login-box button {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      }
+
+      .login-btn {
+        background-color: rgba(40, 167, 69, 0.8);
+      }
+
+      .login-btn:hover {
+        background-color: rgba(33, 136, 56, 0.9);
+      }
+
+      .visit-btn {
+        background-color: rgba(0, 123, 255, 0.8);
+      }
+
+      .visit-btn:hover {
+        background-color: rgba(0, 86, 179, 0.9);
+      }
+
+      .footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #fff;  /* white looks best over background image */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+      /* Responsive */
+      @media (max-width: 980px) {
+        .login-box {
+          width: 300px;
+          padding: 30px;
+        }
+        .login-box h2 {
+          font-size: 25px;
+        }
+      }
+      @media (max-width: 550px) {
+        .login-box {
+          width: 250px;
+          padding: 25px;
+        }
+        .login-box h2 {
+          font-size: 20px;
+        }
+        .login-box button {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 360px) {
+        .login-box {
+          width: 220px;
+          padding: 20px;
+        }
+        .login-box h2 {
+          font-size: 18px;
+        }
+        .login-box button {
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>LOGIN</h2>
+      <form action="home.html" method="GET">
+        <input type="text" placeholder="Username" name="username" required />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          required
+        />
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <form action="home.html" method="GET">
+        <button type="submit" class="visit-btn">Visit Site</button>
+      </form>
+    </div>
+    <footer class="footer">
+  <p>&copy; 2025 NOSTRA. All Rights Reserved. Powered by NOSTRA Online Shopping.</p>
+</footer>
+
+  </body>
 </html>

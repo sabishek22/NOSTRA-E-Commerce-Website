@@ -6,13 +6,34 @@
 
 body {
   padding-top: 120px;
+  font-family: Arial, sans-serif;
 }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3); /* dim effect */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 998; /* UNDER the dropdown */
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 .navbar {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .nav-one {
@@ -113,21 +134,44 @@ body {
   color: rgb(131, 111, 0);
 }
 
-.font-profile:hover .hidden {
-  display: block;
+.cart-toggle,
+.menu-toggle,
+.profile-toggle {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all 0.6s ease;
+  z-index: 1001;
 }
 
-.profile-toggle {
-  padding: 20px;
-  position: absolute;
-  z-index: 8;
-  top: 35px;
-  right: 0px;
-  width: 200px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 4px lightgray;
-  color: rgb(0, 0, 0);
+.menu-toggle{
+  right: -50px !important;
 }
+
+.cart-toggle.show,
+.menu-toggle.show,
+.profile-toggle.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+
+.close-btn {
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 
 .hidden {
   display: none;
@@ -158,22 +202,6 @@ body {
   color: rgb(131, 111, 0);
 }
 
-.font-menu:hover .hidden {
-  display: block;
-}
-
-.menu-toggle {
-  padding: 20px;
-  position: absolute;
-  z-index: 8;
-  top: 35px;
-  right: 0px;
-  width: 200px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 4px lightgray;
-  color: rgb(0, 0, 0);
-}
-
 .menu-toggle p {
   padding: 15px 10px;
   border-bottom: 1px solid rgb(94, 92, 92);
@@ -192,10 +220,6 @@ body {
 
 .font-cart:hover {
   color: rgb(131, 111, 0);
-}
-
-.font-cart:hover .hidden {
-  display: block;
 }
 
 .cart-toggle {
@@ -483,7 +507,6 @@ body {
 }
 
 .brand-logo img {
-  border: 1px solid rgb(215, 214, 214);
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -971,24 +994,7 @@ body {
   width: 100px;
 }
 
-/* .float{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  cursor: pointer;
-  background-color: white;
-}
-
-.float img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-} */
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 980px) {
   .font-menu {
     display: none;
   }
@@ -1142,9 +1148,9 @@ body {
     height: 18px;
   }
 
-  .footer-1 {
+  /* .footer-1 {
     display: none;
-  }
+  } */
 
   .footer-copyrights img {
     width: 70px;
@@ -1464,7 +1470,7 @@ body {
   }
 
   .footer-1 {
-    display: none;
+    flex-direction: row;
   }
 
   .footer-copyrights img {
@@ -1479,8 +1485,7 @@ body {
 @media screen and (max-width: 360px) {
   .one-search,
   .one-tags,
-  .nav-two,
-  .footer-1 {
+  .nav-two {
     display: none !important;
   }
 
@@ -1700,6 +1705,10 @@ body {
     height: 18px;
     object-fit: contain;
     border-radius: 3px;
+  }
+
+   .footer-1 {
+    flex-direction: row;
   }
 
   .footer-copyrights {

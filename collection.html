@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./collection.css" />
   </head>
   <body>
+    <div id="overlay"></div>
     <header class="head-pop" id="headPop">
       <div class="pop-content">
         <h4>Download our App to Get Exclusive Offers</h4>
@@ -35,36 +36,28 @@
           <p><a href="./home.html">Home</a></p>
           <p><a href="./contact.html">Contact Us</a></p>
         </div>
-        <div class="one-fonts">
+                <div class="one-fonts">
           <div class="font-cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            <div class="cart-toggle hidden">
+            <div class="cart-toggle">
+              <span class="close-btn">&times;</span>
               <p>! Your Cart is empty !</p>
-            </div>
-          </div>
-          <div class="font-wishlist">
-            <i class="fa-regular fa-heart"></i>
-            <div class="wishlist-toggle hidden">
-              <p>No Favorites</p>
             </div>
           </div>
           <div class="font-menu">
             <i class="fa-solid fa-list"></i>
-            <div class="menu-toggle hidden">
-              <p class="collection-link" onclick="location.href='./home.html'">
-                Home
-              </p>
+            <div class="menu-toggle">
+              <span class="close-btn">&times;</span>
+              <p onclick="location.href='./home.html'">Home</p>
               <p>About Us</p>
-              <p class="contact-link" onclick="location.href='./contact.html'">
-                Contact Us
-              </p>
-
+              <p onclick="location.href='./contact.html'">Contact Us</p>
               <p>Become a Supplier</p>
             </div>
           </div>
           <div class="font-profile">
             <i class="fa-solid fa-user"></i>
-            <div class="profile-toggle hidden">
+            <div class="profile-toggle">
+              <span class="close-btn" style="font-size: 20px;">&times;</span>
               <p>
                 Hello User
                 <span style="display: block"
@@ -73,14 +66,10 @@
               </p>
               <p>Sign In</p>
               <p>My Orders</p>
-              <p style="border: none">
+              <p>
                 <a
                   href="./index.html"
-                  style="
-                    text-decoration: none;
-                    font-weight: bold;
-                    color: rgb(163, 38, 38);
-                  "
+                  style="text-decoration: none; color: rgb(131, 111, 0)"
                   >LogOut</a
                 >
               </p>
@@ -228,9 +217,6 @@
         </div>
       </div>
     </section>
-    <section class="col-searchbar">
-      <div class="search-input"></div>
-    </section>
     <section class="col-category">
       <h1>Shop By Categories</h1>
       <div class="cat-grid">
@@ -296,33 +282,46 @@
         </div>
       </div>
     </section>
-    <section class="sec-catlog">
+    <section class="col-searchbar">
       <h1>Best Selling Products</h1>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="What are you looking for today?" />
+          <i class="fa-solid fa-qrcode"></i>
+        </div>
+        <button>Get</button>
+      </div>
+    </section>
+    <section class="sec-catlog">
       <div class="catlog-container">
         <div class="filter-title">
           <h2>CATEGORIES</h2>
-        
-        <div class="catlog-filter">
-          <label> <input type="checkbox" name="tags" value="men" /> MEN </label>
-          <label
-            ><input type="checkbox" name="tags" value="women" />WOMEN</label
-          >
-          <label><input type="checkbox" name="tags" value="kid" />KIDS</label>
-          <label
-            ><input
-              type="checkbox"
-              name="tags"
-              value="footwear"
-            />FOOTWEARS</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="tags"
-              value="access"
-            />ACCESORIES</label
-          >
-        </div>
+
+          <div class="catlog-filter">
+            <label>
+              <input type="checkbox" name="tags" value="men" /> MEN
+            </label>
+            <label
+              ><input type="checkbox" name="tags" value="women" />WOMEN</label
+            >
+            <label
+              ><input type="checkbox" name="tags" value="kids" />KIDS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="tags"
+                value="footwear"
+              />FOOTWEARS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="tags"
+                value="access"
+              />ACCESORIES</label
+            >
+          </div>
         </div>
         <div class="vertical-line"></div>
         <div class="catlog-grid">
@@ -347,7 +346,7 @@
           <div class="product" data-tags="shirt,men">
             <img src="./images/men shirt -2.webp" alt="shirt" />
             <h5>Formal Shirt</h5>
-            <h6p></h6>
+            <h6>₹ 750</h6>
             <p>Add to cart</p>
           </div>
           <div class="product" data-tags="jean,men">
@@ -545,6 +544,69 @@
         </div>
       </div>
     </section>
+    <footer class="sec-footer">
+      <div class="footer-1">
+        <div class="footer-shopping">
+          <h5>ONLINE SHOPPING</h5>
+          <p>Men</p>
+          <p>Kids</p>
+          <p>Women</p>
+          <p>Beauty</p>
+          <p>Accesories</p>
+          <p>Genz</p>
+          <p>Gift Cards</p>
+        </div>
+        <div class="footer-links">
+          <h5>USEFUL LINKS</h5>
+          <p>Blog</p>
+          <p>Careers</p>
+          <p>Site Map</p>
+          <p>Clear Trip</p>
+          <p>Whitehat</p>
+        </div>
+        <div class="footer-policy">
+          <h5>CUSTOMER POLICIES</h5>
+          <p>Contact Us</p>
+          <p>FAQ</p>
+          <p>T&C</p>
+          <p>Terms of Use</p>
+          <p>Track Order</p>
+          <p>Shipping</p>
+          <p>Cancellations</p>
+          <p>Returns</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer-app">
+          <h3>EXPERIENCE NOSTRA APP ON MOBILE</h3>
+          <p class="footer-app_img">
+            <img src="./images/play store.png" alt="playstore" />Get it on
+            PlayStore
+          </p>
+          <p class="footer-app_img">
+            <img src="./images/apple logo.jpeg" alt="apple" />Download on
+            AppStore
+          </p>
+        </div>
+        <div class="footer-icons">
+          <h5>KEEP IN TOUCH</h5>
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="footer-copyrights">
+          <img src="./images/nostra logo.png" alt="logo" />
+          <p>
+            &copy; 2025 NOSTRA. All Rights Reserved. Powered by NOSTRA Online
+            Shopping.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="./collection.js"></script>
 </html>

@@ -4,36 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nostra Contact Page</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="contact.css" />
   </head>
-
   <body>
+    <div id="overlay"></div>
+
     <nav class="nostra-nav">
       <div class="logo-box">
         <h1>NOSTRA</h1>
-        <p>Elevate Your Fashion</p>
+        <p>Fashion & Trends</p>
       </div>
 
       <ul class="nav-links">
         <li><a href="./home.html">Home</a></li>
-        <li><a href="./collection.html">Collections</a></li>
-        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./collection.html">Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Supplier</a></li>
       </ul>
-      <div class="profile-icon">
-        <i class="fa-solid fa-user"></i>
+
+      <div class="icons">
         <i class="fa-solid fa-bars menu-toggle"></i>
+        <i class="fa-solid fa-user user-icon"></i>
       </div>
-      
+
+      <div class="user-dropdown">
+        <span class="close-btn">&times;</span>
+        <p>Hello User</p>
+        <p><span>To access your Nostra Account</span></p>
+        <hr />
+        <p onclick="location.href='./index.html'">Sign In</p>
+        <p>My Orders</p>
+        <p onclick="location.href='./index.html'">LogOut</p>
+      </div>
     </nav>
+    <div class="side-menu">
+      <span class="close-btn">&times;</span>
+      <h2>Menu</h2>
+      <p onclick="location.href='./home.html'">Home</p>
+      <p onclick="location.href='./collection.html'">Collection</p>
+      <p>About Us</p>
+      <p>Become a Supplier</p>
+    </div>
 
     <section class="contact-header">
-      <h1>Contact Us</h1>
-      <p>We are always ready to assist you.</p>
+      <h1 style="font-size: 40px">Get in Touch</h1>
     </section>
 
     <section class="contact-info">
@@ -42,13 +60,11 @@
         <h3>Phone</h3>
         <p>+91 98765 43210</p>
       </div>
-
       <div class="info-box">
         <i class="fa-solid fa-envelope"></i>
         <h3>Email</h3>
         <p>support@nostra.com</p>
       </div>
-
       <div class="info-box">
         <i class="fa-solid fa-location-dot"></i>
         <h3>Address</h3>
@@ -59,7 +75,6 @@
     <section class="contact-body">
       <div class="form-section">
         <h2>Send Us a Message</h2>
-
         <form>
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
@@ -73,5 +88,25 @@
         <img src="./images/contact page.jpeg" alt="Shopping Image" />
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer-copyrights">
+        <img src="./images/nostra logo-2.jpg" alt="logo" />
+        <p>
+          &copy; 2025 NOSTRA. All Rights Reserved. Powered by NOSTRA Online
+          Shopping.
+        </p>
+        <div class="download-app">
+          <div class="footer-app">
+            <img src="./images/play store.png" alt="playstore" />
+          </div>
+          <div class="footer-app">
+            <img src="./images/app store.png" alt="apple" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
   </body>
 </html>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div id="overlay"></div>
     <nav class="navbar">
       <div class="nav-one">
         <div class="one-title">
@@ -34,30 +35,25 @@
         <div class="one-fonts">
           <div class="font-cart">
             <i class="fa-solid fa-cart-shopping"></i>
-            <div class="cart-toggle hidden">
+            <div class="cart-toggle">
+              <span class="close-btn">&times;</span>
               <p>! Your Cart is empty !</p>
             </div>
           </div>
           <div class="font-menu">
             <i class="fa-solid fa-list"></i>
-            <div class="menu-toggle hidden">
-              <p
-                class="collection-link"
-                onclick="location.href='./collection.html'"
-              >
-                Collections
-              </p>
+            <div class="menu-toggle">
+              <span class="close-btn">&times;</span>
+              <p onclick="location.href='./collection.html'">Collections</p>
               <p>About Us</p>
-              <p class="contact-link" onclick="location.href='./contact.html'">
-                Contact Us
-              </p>
-
+              <p onclick="location.href='./contact.html'">Contact Us</p>
               <p>Become a Supplier</p>
             </div>
           </div>
           <div class="font-profile">
             <i class="fa-solid fa-user"></i>
-            <div class="profile-toggle hidden">
+            <div class="profile-toggle">
+              <span class="close-btn" style="font-size: 20px;">&times;</span>
               <p>
                 Hello User
                 <span style="display: block"
@@ -66,7 +62,7 @@
               </p>
               <p>Sign In</p>
               <p>My Orders</p>
-              <p style="border: none">
+              <p>
                 <a
                   href="./index.html"
                   style="text-decoration: none; color: rgb(131, 111, 0)"
@@ -410,7 +406,7 @@
       </div>
       <div class="footer-2">
         <div class="footer-copyrights">
-          <img src="./images/nostra logo.png" alt="logo" />
+          <img src="./images/nostra logo-2.jpg" alt="logo" />
           <p>
             &copy; 2025 NOSTRA. All Rights Reserved. Powered by NOSTRA Online
             Shopping.
