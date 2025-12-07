@@ -575,6 +575,7 @@ body {
 }
 
 .araival-list button:hover {
+  background-color: lightgray;
   transform: scale(1.03);
 }
 
@@ -655,6 +656,7 @@ body {
 }
 
 .wanted-list button:hover {
+  background-color: lightgray;
   transform: scale(1.03);
 }
 
@@ -1274,7 +1276,7 @@ body {
     display: none;
   }
 
-  .sec-image{
+  .sec-image {
     margin-top: 20px;
   }
 
@@ -1494,7 +1496,7 @@ body {
   }
 
   .one-fonts {
-    gap: 6px;
+    gap: 1px;
   }
 
   .image-opt img {
@@ -1713,5 +1715,3 @@ body {
     font-size: 11px;
   }
 }
-
-/* HOME-PAGE-STYLES-COMPLETED */

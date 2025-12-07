@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.nostra-nav {
+  width: 100%;
+  padding: 15px 25px;
+  background-color: #cb6d6d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo-box h1 {
+  font-size: 28px;
+  color: gold;
+  letter-spacing: 2px;
+}
+
+.logo-box p {
+  font-size: 12px;
+  color: #c8b178;
+  margin-top: -3px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+.profile-icon i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 120px 20px 40px;
+  background: linear-gradient(to right, #000, #b48b38);
+  color: white;
+}
+
+.contact-header h1 {
+  font-size: 40px;
+}
+
+.contact-info {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  width: 300px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-box i {
+  font-size: 35px;
+  color: #b48b38;
+}
+
+.info-box h3 {
+  margin-top: 10px;
+}
+
+.contact-body {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  width: 450px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: #b48b38;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  background: #b48b38;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: black;
+}
+
+.shopping-img img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 550px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  .contact-body {
+    padding: 20px;
+  }
+
+  .form-section,
+  .shopping-img img {
+    width: 100%;
+  }
+}

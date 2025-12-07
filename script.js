@@ -1,3 +1,14 @@
+// HEADER POPUP //
+
+  document.getElementById("closePop").onclick = function () {
+    document.getElementById("headPop").style.display = "none";
+
+    document.querySelector(".navbar").style.top = "0";
+  };
+
+
+
+
 //PROFILE TOGGLE//
 
 let profile = document.querySelector(".font-profile")
