@@ -60,5 +60,5 @@ The layout automatically adapts to:
 * **Tablets (980px)** – 2‑column grid
 * **Mobile (550px / 360px)** – 1‑column grid
 * Text, images, and cards scale perfectly on all devices
-* **Email:** [your-email@example.com](mailto:your-email@example.com)
-* **GitHub:** [https://github.com/your-username](https://github.com/your-username)
+* 
+* **Email:** @s.abishekabi22@gmail.com
